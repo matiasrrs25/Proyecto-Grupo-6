@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡SAN BERNARDINO!</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="estilo.css">
+
+
+</head>
+<body>
+    <!-- SECCION INICIO -->
+    <section id="inicio">
+        <header>
+            <div class="contenido-header">
+                <div class="logo">
+                    <h1>SAN BERNARDINO</h1>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li> 
+                            <a href="#inicio" onclick="seleccionar()">
+                
+                                <span>Inicio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#historia" onclick="seleccionar()">
+                                
+                                <span>Historia</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#atractivos" onclick="seleccionar()">
+                                
+                                <span>Atractivos de la Ciudad</span>
+                            </a></li>
+                    
+                    </ul>
+                </nav>
+                
+            </div>
+        </header>
+        <!-- Carrusel -->
+        <div class="carrusel">
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround":true, "pageDots": false, "autoPlay": true}'>
+                <div class="gallery-cell" >
+                    <img src="img/1.jpg" alt="">
+                </div>
+                <div class="gallery-cell">
+                    <img src="img/2.jpg" alt="">
+                </div>
+               
+            </div>
+            <div class="info">
+                <h2 class="capital">CAPITAL TURISTICA DEL PARAGUAY </h2>
+
+                
+                <button onclick='saludar("Disculpe, estamos trabajando en ello.")'>Leer más</button>
+                <script>
+                    function saludar(sanber){
+                        console.log("Disculpe, estamos trabajando en ello.");
+                        alert("Disculpe, estamos trabajando en ello.")
+                    } 
+                </script>
+                
+            </div>
+        </div>
+
+    </section>
+
+                    
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION Historia -->
+    <section id="historia">
+     <center><h1><b>HISTORIA DE LA CIUDAD</b></h1></center>
+        <div class="fila">
+            <div class="item">
+                <div class="icono">
+                    <img src="img/historia1.png">
+                </div>
+                <center><h2> <p>La ciudad fue fundada el 24 de agosto de 1881,
+                    después de la Guerra de la Triple Alianza, por inmigrantes alemanes,
+                     entre ellos el suizo alemán Santiago Schaerer, primer administrador de la colonia,
+                      siendo rebautizada como General Bernardino Caballero, en ese entonces presidente del
+                       Paraguay. <br/>
+                        La ciudad se encuentra distante a unos 50 kilómetros de Asunción y es considerada
+                        uno de los lugares de preferencia en el verano por parte de los turistas nacionales
+                         e internacionales. <br/>
+                          Igualmente la belleza de sus riquezas naturales y la funcionalidad
+                          de la ciudad crean un ambiente perfecto para disfrutar en familia y con los amigos,
+                           durante todo el año. </p></h2></center>
+                       
+            </div>  
+        </div>
+
+        <button onclick='saludar("Disculpe, estamos trabajando en ello.")'>Ver Más</button>
+
+        <script src="script.js"></script>
+    </section>
+
+    <!-- SECCION ATRACTIVOS DE LA CIUDAD -->
+    <section id="atractivos">
+        <h2>ATRACTIVOS DE LA CIUDAD</h2>
+
+        <div class="fila">
+            <div class="item"> 
+                <img src="img/lugar1.jpg" alt="">
+                <p>Paseo De Los Recuerdos</p>
+            </div>
+            <div class="item">
+                <img src="img/lugar2.jpg" alt="">
+                <p>Mirador Virgen Aparecida</p>
+            </div>
+                <div class="item">
+                <img src="img/lugar3.jpg" alt="">
+                <p>Escalinata</p>
+                </div>
+        </div>
+        <div class="fila">
+            <div class="item">
+                <img src="img/lugar4.jpg" alt="">
+                <p>Hotel Del lago</p>
+            </div>
+            <div class="item">
+                <img src="img/lugar5.jpg" alt="">
+                <p>Muelle De San Blas</p>
+            </div>
+            <div class="item">
+                <img src="img/lugar6.jpg" alt="">
+                <p>Anfiteatro</p>
+            
+            </div>
+        </div>
+
+        
+
+    </section>
+
+    
+
+    <!-- SECCION SANBER Y PIE DE PAGINA -->
+    <section id="sanber">
+        <div class="fila">
+            <div class="col">
+                <h1>San Bernardino</h1>
+            </div>
+            
+            <div class="col">
+                <h3>Lugar de Interes </h3>
+                <input type="text" placeholder="Escriba Aquí">
+                <button onclick='saludar("Disculpe, estamos trabajando en ello.")'>enviar</button>
+                <script>
+                    function saludar(sanber){
+                        console.log("Disculpe, estamos trabajando en ello.");
+                        alert("Disculpe, estamos trabajando en ello.")
+                    } 
+                </script>
+            </div>
+        </div>
+
+    </section>
+    
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
