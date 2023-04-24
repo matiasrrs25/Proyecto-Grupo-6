@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡SAN BERNARDINO!</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-Kg4/gKBC7VHfePJt/cRpKGQvRuzt2nC+EpYjT8+rTUWzTMTw+QNirSKPPjxbp9XsWfRLdwm7zMQFbDKu+c3dCw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+</head>
+<body>
+    <!-- SECCION INICIO -->
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="Escriba" placeholder="Escriba" aria-label="Escriba">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </nav>
+
+    <section id="inicio">
+        <header>
+            <div class="contenido-header">
+                <div class="logo">
+                    <h1>SAN BERNARDINO</h1>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li> 
+                            <a href="#inicio" onclick="seleccionar()">
+                
+                                <span>Inicio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#historia" onclick="seleccionar()">
+                                
+                                <span>Historia</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#atractivos" onclick="seleccionar()">
+                                
+                                <span>Atractivos de la Ciudad</span>
+                            </a></li>
+                    
+                    </ul>
+                    <div class="d-flex flex-row-reverse ms-auto">
+                        <div id="weather-icon" class="text-black"><i class="fas fa-sun"><i class="wi wi-day-sunny"></i></i></div>
+                        <div id="weather-info" class="text-black"></div>
+                </nav>
+                
+            </div>
+        </header>
+        <!-- Carrusel -->
+        <div class="carrusel">
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround":true, "pageDots": false, "autoPlay": true}'>
+                <div class="gallery-cell" >
+                    <img src="img/1.jpg" alt="">
+                </div>
+                <div class="gallery-cell">
+                    <img src="img/2.jpg" alt="">
+                </div>
+               
+            </div>
+            <div class="info">
+                <h2>CAPITAL TURISTICA DEL PARAGUAY </h2>
+                
+                <button onclick='saludar("estamos trabajando para ello")'>Leer más</button>
+                <script src="js/index.js">
+                </script>
+                
+            </div>
+        </div>
+
+    </section>
+
+                    
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION Historia -->
+    <section id="historia">
+     <center><h1><b>HISTORIA DE LA CIUDAD</b></h1></center>
+        <div class="fila">
+            <div class="item">
+                <div class="icono">
+                    <img src="img/historia1.png">
+                </div>
+                <center><h2> <p>La ciudad fue fundada el 24 de agosto de 1881,
+                    después de la Guerra de la Triple Alianza, por inmigrantes alemanes,
+                     entre ellos el suizo alemán Santiago Schaerer, primer administrador de la colonia,
+                      siendo rebautizada como General Bernardino Caballero, en ese entonces presidente del
+                       Paraguay. <br/>
+                        La ciudad se encuentra distante a unos 50 kilómetros de Asunción y es considerada
+                        uno de los lugares de preferencia en el verano por parte de los turistas nacionales
+                         e internacionales. <br/>
+                          Igualmente la belleza de sus riquezas naturales y la funcionalidad
+                          de la ciudad crean un ambiente perfecto para disfrutar en familia y con los amigos,
+                           durante todo el año. </p></h2></center>
+                       
+            </div>  
+        </div>
+
+        <button onclick='saludar("estamos trabajando para ello")'>Ver Más</button>
+        <script src="js/index.js"></script>
+
+    </section>
+
+    <!-- SECCION ATRACTIVOS DE LA CIUDAD -->
+    <section id="atractivos">
+        <h2>ATRACTIVOS DE LA CIUDAD</h2>
+
+        <div class="fila">
+            <div class="item">
+                <img src="img/lugar1.jpg" alt="">
+                <p>Paseo De Los Recuerdos</p>
+            </div>
+            <div class="item">
+                <img src="img/lugar2.jpg" alt="">
+                <p>Mirador Virgen Aparecida</p>
+            </div>
+            <div class="item">
+                <img src="img/lugar3.jpg" alt="">
+                <p>Escalinata</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="item">
+                <img src="img/lugar4.jpg" alt="">
+                <p>Hotel Del lago</p>
+            </div>
+            <div class="item">
+                <img src="img/lugar5.jpg" alt="">
+                <p>Muelle De San Blas</p>
+            </div>
+            <div class="item">
+                <img src="img/lugar6.jpg" alt="">
+                <p>Anfiteatro</p>
+            </div>
+        </div>
+
+        
+
+    </section>
+
+    
+
+    <!-- SECCION SANBER Y PIE DE PAGINA -->
+    <section id="sanber">
+        <div class="fila">
+            <div class="col">
+                <h1>San Bernardino</h1>
+            </div>
+            
+            <div class="col">
+                <h3>Lugar de Interes </h3>
+                <input type="text" placeholder="Escriba Aquí">
+                <button onclick='saludar("estamos trabajando para ello")'>Enviar..</button>
+            </div>
+            
+            <div id="github-profile"></div>
+
+        </div>
+
+    </section>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    
+    <script src="/js/weather.js"></script>
+    <script src="/js/wheather-icons.js"></script>
+    <script src="/js/github.js"></script>
+    <script src="/github2.js"></script>
+</body>
+</html>
